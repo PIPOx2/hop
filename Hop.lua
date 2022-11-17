@@ -3538,15 +3538,6 @@ local serv = win:Server("Preview", "")
 
 local btns = serv:Channel("Buttons")
 
-local OP = btns:Toggle("FastAttack",true, function(bool)
-Auto_Farm_Bounty = bool
-end)
-btns:Button("lock", function()
-OP:lock()
-end)
-btns:Button("unlock", function()
-OP:unlock()
-end)
 btns:Button("Hop", function()
 Hopey()
 
